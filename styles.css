@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    color: #ffffff;
+    background-color: #2c2c2c;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container{
+    width: 95%;
+    margin: auto; 
+    background-color: #373a40;
+}
+
+/*Navigation styles*/
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+.logo{
+    flex: 1 1 auto;
+    padding: 0 10px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    flex: 3 1 auto;
+}
+.nav-main ul{
+    background-color: #686d76;
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    color: #d3d1d1;
+    font-weight: bolder;
+}
+
+.nav-main ul li a:hover {
+    /*changes styles to the links of the navbar when hovering with the cursor. the slight change in color gives the effect of highlighting the word*/
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+/*Header showcase*/
+.header-showcase{
+    width: 100%;
+    height: 6rem;
+    background-image: url(./img/header-showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #373a40;
+}
+
+/*section1: banner with intro text*/
+.section1{
+    width: 100%;
+    background-color: #373a40;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.section1 h1{
+    font-weight: bolder; 
+    line-height: 1.5rem;
+    padding: 20px 0;
+}
+
+.section1 p{
+    line-height: 1.3rem;
+    padding: 0 0 20px 0;
+}
+
+/*section2: cards leading to other sections*/
+.section2{
+    width: 100%;
+    background-color: #686d76;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 a{
+    background-color: #373a40;
+    margin: 1rem 0;
+    display: block;
+    text-align: center;
+    color: #d3d1d1;
+    width: 40%;
+}
+
+.section2 a:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*styles for the single cards*/
+.editing-card{
+    background-color: #686d76;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 30%;
+    padding: 10px;
+}
+
+.editing-img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-card{
+    background-color: #686d76;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 30%;
+    padding: 10px;
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+
+.faq-card{
+    background-color: #686d76;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 30%;
+    padding: 10px;
+}
+
+.faq-img{
+    width: 100%;
+    height: auto;
+}
+
+/*section3: carousel + contact*/
+.section3{
+    width: 100%;
+    background-color: #373a40;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.quote-carousel{
+    max-height: 650px;
+    background-color: #373a40;
+    flex: 1 1 40%;
+    padding: 10px 5px 10px 0;
+}
+
+.carousel-spaceholder{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact{
+    max-height: 650px; 
+    background-color: #373a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1 1 40%;
+    padding: 10px 0;   
+}
+.contact h1{
+    padding-right: 10px;
+    padding-top: 1.2rem;
+}
+.contact p,
+.contact ul{
+    padding-right: 10px;
+    padding-top: 2rem;
+}
+
+.contact p{
+    padding-left: 2rem;
+    text-align: right;
+}
+.contact ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact ul li a{
+    color: #d3d1d1;
+}
+
+.contact ul li a:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*footer*/
+.footer-container{
+    background-color: #373a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 1.5rem 0;
+}
+
+.privacy-cookies a{
+    color: #d3d1d1;
+}
+
+.privacy-cookies a:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*media query 1: applies when display is <=1100px
+moves contact and carousel in column, placing contacts above carousel; reduces the size of the carousel*/
+@media (max-width:1100px) {
+    .section3{
+        flex-direction: column-reverse;
+    }
+    .contact{
+        align-items: center;
+        padding: 5px;
+    }
+    .contact p{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .contact ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: none; 
+        padding: 1rem 0.4rem;
+    }
+    .contact ul li{
+        padding-right: 10px;
+    }
+    .quote-carousel{
+        padding-bottom: 20px;
+        width: 50%;
+        align-self: center;
+    }
+}
+
+/*media query 2: applies when display is <=900px
+moves the cards of section2 in column, placing the image of each single card on the right side of the text
++ increases the size of the carousel*/
+@media (max-width:900px) {
+    .section2{
+        flex-direction: column;
+    }
+    .section2 p{
+        padding-right: 6px;
+    }
+    .editing-card,
+    .blog-card,
+    .faq-card{
+        flex-direction: row;
+    }
+    .editing-img,
+    .blog-img,
+    .faq-img{
+        max-width: 65%;
+        height: 100%;
+        align-self: center;
+    }
+    .quote-carousel{
+        width: 80%;
+    }
+}
+
+/*media query 3: applies when display is <=630px
+fixes the navigation container placing the nav-menu under the logo
++ places the images in the cards below corresponding text
++ increases the size of the carousel, centers the carousel, wraps the contact links*/
+@media (max-width:630px) {
+    .nav-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+    
+    .logo{
+        font-size: 2.5rem;
+    }
+    
+    .navigation{
+        display: flex;
+        justify-content: flex-start;
+        background-color: #686d76;
+        padding: 0 10px;
+    }
+    .nav-main ul{
+        flex-wrap: wrap;
+    }
+    .nav-main ul li {
+        padding: 5px;
+    }
+    
+    .nav-main ul li a{
+        color: #d3d1d1;
+        font-size: 1rem;
+    }
+    .editing-card,
+    .blog-card,
+    .faq-card{
+        flex-direction: column;
+    }
+    .editing-img,
+    .blog-img,
+    .faq-img{
+        max-width: 100%;
+        height: auto;
+        align-self: flex-start;
+    }
+    .contact ul{
+        flex-wrap: wrap;
+    }
+    .quote-carousel{
+        width: 95%;
+        padding: 20px 0px;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--import font 'Work Sans' from Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <!--import font 'Gochi Hand' from Google Font (for logo simulation)-->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <!--cdn font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--custom CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <title>My editing webpage</title>
+</head>
+
+<body>
+    <!--div container, contains all elements of the body including footer-->
+    <div class="container">
+        <!--container for navbar and logo-->
+        <nav class="nav-main">
+            <!--container for logo-->
+            <div class="logo">
+                <i class="fas fa-pen-alt"></i>
+                my editing <!--this is a logo simulation, when there will be a logo in PNG format, the image can be inserted into div-->
+            </div>
+            <div class="navigation">
+                <!--navigation menu including signin. doesn't need a class because it is the only 'ul' element in class 'nav-main'-->
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Editing</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">SIGN IN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--header showcase: image banner-->
+        <header class="header-showcase">
+        </header>
+
+        <!--section 1: intro text. simulation with 50 words-->
+        <section class="section1">
+            <h1>Why this webpage?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium provident laboriosam iure officia?
+                Alias enim voluptates unde quia possimus dolorem, cum impedit! Atque sunt porro in assumenda placeat
+                nobis facilis? Nesciunt placeat recusandae sed id, repellat facere tenetur ullam quasi adipisci animi
+                harum, ea tempore! Est iusto cupiditate perferendis atque!</p>
+        </section>
+
+        <!--section 2: cards with links to other pages of the website. simulation with header + paragraph of 15 to 20 words-->
+        <section class="section2">
+            <article class="editing-card">
+                <div>
+                    <h1>
+                        Editing
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum impedit pariatur sequi et accusantium voluptatibus porro adipisci quibusdam molestias?</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <img src="./img/editing.jpg" class="editing-img" alt="editing-card-img">
+            </article>
+            <article class="blog-card">
+                <div>
+                    <h1>
+                        Blog
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, adipisci odio autem ipsam
+                        dicta necessitatibus?</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <img src="./img/blog.jpg" class="blog-img" alt="blog-card-img">
+            </article>
+            <article class="faq-card">
+                <div>
+                    <h1>FAQ</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quae cumque rem ut molestias
+                        deserunt?</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <img src="./img/faq.jpg" class="faq-img" alt="faq-card-img">
+            </article>
+        </section>
+
+        <!--section 2: carousel for images and favorite quotes + contacts card-->
+        <section class="section3">
+            <div class="quote-carousel">
+                <img src="./img/carousel-mockup.PNG" class="carousel-spaceholder" alt="carousel-img">
+                <!--static img only as spaceholder, carousel could be done with bootstrap-->
+            </div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, excepturi itaque id laborum placeat nisi.</p>
+                <ul>
+                    <li>
+                        <a href="#">email@email.com <i class="fas fa-at"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">FB_account <i class="fab fa-facebook-square"></i>
+                    </li>
+                    <li>
+                        <a href="#">instagram_user <i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">GitHub_account <i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer-container">
+            <div class="copyright">
+                <i class="fab fa-creative-commons"></i> creative commons license
+            </div>
+            <div class="privacy-cookies">
+                <a href="#">privacy</a> · <a href="#">cookies</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
